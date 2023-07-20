@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stat.h": "c",
+        "typeinfo": "c",
+        "usr_mgt.h": "c",
+        "en_decode.h": "c"
+    }
+}
