@@ -1,2 +1,5 @@
-main:main.c 
-	gcc main.c -o main
+main:main.o 
+	gcc main.o -o main
+
+main.o :main.c
+	gcc -c main.c -o main.o
