@@ -2,7 +2,8 @@
 
 void encode(char *msg, int key)
 {
-    for (int i = 0; msg[i]; i++)
+    int i;
+    for (i = 0; msg[i]; i++)
     {
         if (msg[i] >= 'a' && msg[i] <= 'z')
         {
@@ -20,7 +21,8 @@ void encode(char *msg, int key)
 }
 void decode(char *msg, int key)
 {
-    for (int i = 0; msg[i]; i++)
+    int i;
+    for (i = 0; msg[i]; i++)
     {
         if (msg[i] >= 'a' && msg[i] <= 'z')
         {

@@ -9,17 +9,17 @@ int checkForSingle(char *name, char *passwd)
     /*判断用户名是否合法*/
     if (strcmp(name, USER_NAME) != 0)
     {
-        printf("用户名与密码不匹配\n");
+        // printf("用户名与密码不匹配\n");
         return LOG_ERR;
     }
     /*判断密码是否正确*/
     if (strcmp(passwd, PASSWD) != 0)
     {
-        printf("用户名与密码不匹配\n");
+        // printf("用户名与密码不匹配\n");
         return LOG_ERR;
     }
 
-    printf("用户名与密码匹配!\n");
+    // printf("用户名与密码匹配!\n");
 
     return LOG_OK;
 }
@@ -47,7 +47,7 @@ int check_for_user(int users, char *passwd)
         result = -1;
         break;
     }
-
+#if 0
     if (result == 0)
     {
         printf("用户名与密码匹配!\n");
@@ -56,6 +56,6 @@ int check_for_user(int users, char *passwd)
     {
         printf("用户名与密码不匹配!\n");
     }
-    
+#endif
     return result;
 }

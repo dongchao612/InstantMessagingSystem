@@ -7,8 +7,12 @@
 int main(int argc, char const *argv[])
 {
     char test_str[]="AaBbCcDdXxYyZz123890-=,./";
+
+    printf("加密前:%s\n",test_str);
     encode(test_str,3);
+    
+    printf("加密后:%s\n",test_str);
     decode(test_str,3);
-    printf("%s",test_str);
+
     return 0;
 }

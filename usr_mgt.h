@@ -6,11 +6,15 @@
 
 /*系统支持的最大用户数量*/
 #define MAX_UNUM 50
+
 /*系统支持的最大用户姓名长度*/
 #define MAX_UNAME_LEN 32
 
 #define USER_OFFLINE 0
 #define USER_ONLINE 1
+
+#define OP_OK 0
+#define OP_ERR -1
 
 /*表示用户的结构体*/
 struct susr

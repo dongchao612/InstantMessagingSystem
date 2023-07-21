@@ -3,6 +3,10 @@
         "stat.h": "c",
         "typeinfo": "c",
         "usr_mgt.h": "c",
-        "en_decode.h": "c"
+        "en_decode.h": "c",
+        "login.h": "c",
+        "string.h": "c",
+        "stdlib.h": "c",
+        "stdio.h": "c"
     }
 }
