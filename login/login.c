@@ -10,18 +10,18 @@ int checkForSingle(char *name, char *passwd)
     if (strcmp(name, USER_NAME) != 0)
     {
         // printf("用户名与密码不匹配\n");
-        return LOG_ERR;
+        return -1;
     }
     /*判断密码是否正确*/
     if (strcmp(passwd, PASSWD) != 0)
     {
         // printf("用户名与密码不匹配\n");
-        return LOG_ERR;
+        return -1;
     }
 
     // printf("用户名与密码匹配!\n");
 
-    return LOG_OK;
+    return 0;
 }
 
 int check_for_user(int users, char *passwd)

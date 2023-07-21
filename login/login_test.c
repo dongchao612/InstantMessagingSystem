@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
     scanf("%s", passwd);
     int result = checkForSingle(user, passwd);
 
-    if (result == LOG_ERR)
+    if (result == LOGIN_ERR)
     {
         printf("用户名与密码不匹配\n");
     }
@@ -32,7 +32,7 @@ int main(int argc, char const *argv[])
 
     result = check_for_user(users, passwd);
 
-    if (result == LOG_ERR)
+    if (result == LOGIN_ERR)
     {
         printf("用户名与密码不匹配\n");
     }

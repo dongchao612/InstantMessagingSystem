@@ -10,8 +10,8 @@
 #define USER_NAME "USER1"
 #define PASSWD "PASSWD1"
 
-#define LOG_OK 0
-#define LOG_ERR -1
+#define LOGIN_OK 0
+#define LOGIN_ERR -1
 
 #define USER1 10001
 #define PASSWD1 "10001"
