@@ -5,7 +5,7 @@ usr_mgt_test.o:usr_mgt_test.c
 	gcc -c usr_mgt_test.c -o usr_mgt_test.o
 
 usr_mgt.o:usr_mgt.c
-	gcc -c usr_mgt.c -o usr_mgt.o
+	gcc -c usr_mgt.c -Wall -o usr_mgt.o
 	
 .PHONY:
 clear:

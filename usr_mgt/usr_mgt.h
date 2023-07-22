@@ -27,11 +27,15 @@ struct susr
     int u_stat;
 };
 
+
+/*好友数组初始化*/
+void user_arry_init(int id, char *name);
+
 /*增加好友 0表示成功 -1 表示失败*/
 int user_add(int u_id, char *u_name);
 
 /*删除好友  0表示成功 -1 表示失败*/
-int user_del(int u_id, char *u_name);
+int user_del(int u_id);
 
 /*好友排序*/
 void user_sort_by_name(void);
@@ -39,14 +43,12 @@ void user_sort_by_id(void);
 
 /*通过好友昵称或者id查找好友*/
 struct susr *user_find_by_name(char *name);
-struct susr *user_find_by_id(int *id);
+struct susr *user_find_by_id(int id);
 
 /*通过二分法查找*/
 struct susr *binary_search_by_id(int id);
 
 /*导出好友信息*/
 void user_info_dump();
-
-void user_arry_init(int id, char *name);
 
 #endif // !USR_MGT_H__
